@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    tools:context=".MainActivity">
+
+    <!--Toolbar displaying location-->
+    <include
+        layout="@layout/toolbar"/>
+
+    <!--Container for fragments for each option in Bottom Navigation Menu-->
+    <FrameLayout
+        android:id="@+id/fl_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolBar"
+        android:layout_above="@id/bottom_navigation"/>
+
+
+    <!--Bottom Navigation Menu for Library, Equalizer, Playlists, Settings-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        android:itemBackground="?attr/colorPrimary"
+        app:itemIconTint="?attr/colorOnPrimary"
+        app:itemTextColor="?attr/colorOnPrimary"
+        app:menu="@menu/bottom_navigation"/>
+</RelativeLayout>
