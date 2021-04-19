@@ -2,7 +2,7 @@ package com.example.razrmusicplayer;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -23,5 +23,6 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Library");
     }
+
 
 }

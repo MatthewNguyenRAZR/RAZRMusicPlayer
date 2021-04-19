@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/ic_library"
+        android:id="@+id/nav_library"
         android:icon="@drawable/bottom_navigation_library"
         android:title="Library"/>
     <item
-        android:id="@+id/equalizer"
-        android:icon="@drawable/bottom_navigation_equalizer"
-        android:title="Equalizer"/>
+        android:id="@+id/nav_folder"
+        android:icon="@drawable/bottom_navigation_folder"
+        android:title="Folder"/>
     <item
-        android:id="@+id/playlist"
+        android:id="@+id/nav_playlist"
         android:icon="@drawable/bottom_navigation_playlist"
         android:title="Playlist"/>
     <item
-        android:id="@+id/settings"
+        android:id="@+id/nav_settings"
         android:icon="@drawable/bottom_navigation_settings"
         android:title="Settings"/>
 </menu>
